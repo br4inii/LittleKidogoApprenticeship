@@ -6,3 +6,7 @@ Sumbmitted material from week 1.
 
 created branch for week 1 material
     added Object Oriented Programming and Functional Programming.md
+    
+Subbmitted material for week 2.
+    added exercise.1.md.
+    added DiaryProject.md

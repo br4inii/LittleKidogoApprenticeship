@@ -13,9 +13,13 @@ Sumbmitted material from week 1.
 created branch for week 1 material
     added Object Oriented Programming and Functional Programming.md
 
+
 created branch for week 2 material
     updated exercises.md till chapter 2
 
 merged week 1 & 2 branch to main
+Submitted material for week 2.
+    added exercise.1.md.
+    added DiaryProject.md
 
 ## week 3

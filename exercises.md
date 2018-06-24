@@ -1,9 +1,9 @@
 
-# Exercise1 elixir programming
+# Exercises On Programming with Elixir
 
-## Chapter 1-2
+## Pattern Matching
 
-### Pattern matching 1
+Exercise 1
 
    Which of the following will match?
     a = [1, 2, 3]
@@ -26,13 +26,13 @@
 
      [[a]]=[[1,2,3]]
 
-### pattern matching 2
+Exercise 2
 
 1. `[a,b,a]=[1,2,3]` this will cause a match error as `a` has already been matched to value `1` and not `3` as in the end of the list on the right.
 2. `[a,b,a]=[1,1,2]` doesn't match either as the value of `1` already matched `a` and thus cant match to `b`.
 3. `[a,b,a]=[1,2,1]` matches as all variables match to the values on the write.
 
-### pattern matching 3
+Exercise 3
 
 if we assume variable `a` contains a value `2`
 
@@ -45,7 +45,7 @@ if we assume variable `a` contains a value `2`
 
 ## Functions
 
-### functions exercise 1
+Exercise 1
 
 Create a function to do the following
 
@@ -61,11 +61,11 @@ Create a function to do the following
     `pair_tuple_to_list = fn`
     //TODO check out tuples again.
 
-### functions exercise 2 & 3
+Exercise 2 & 3
 
     in file /elixir tests/fizz.exs
 
-### functions exercise 4
+Exercise 4
 
 `prefix` function to print two spaced strings 
 `prefix = fn a ->`
@@ -73,6 +73,12 @@ Create a function to do the following
        ` a<>" "<>b `
     `end) `
 `end`
+
+Exercise 5
+
+`Enum.map [1,2,3,4], fn x -> x + 2 end` becomes `Enum.map [1,2,3,4], &(&1 + 2)`
+
+`Enum.map [1,2,3,4], fn x -> IO.inspect x end` becomes `Enum.map [1,2,3,4], &(IO.inspect(&1))` or `Enum.map [1,2,3,4], &(IO.inspect/1)`
 
 ## Modules
 

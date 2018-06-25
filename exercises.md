@@ -82,7 +82,6 @@ Exercise 5
 `Enum.map [1,2,3,4], fn x -> IO.inspect x end` becomes `Enum.map [1,2,3,4], &(IO.inspect(&1))` or `Enum.map [1,2,3,4], &(IO.inspect/1)`
 
 ## Modules
-<<<<<<< HEAD
 
     * Exercise 1: refer to /elixir_tests/times.exs
     * Exercise 2:
@@ -105,29 +104,3 @@ Exercise 5
 `iex(3)> Times.double(12)`
 `24`
 `iex(4)>`
-=======
-Exercise 1: refer to `/elixir_tests/times.exs`
-Exercise 2:
- method 1 results
-        `$ iex times.exs
-Erlang/OTP 20 [erts-9.3] [source] [64-bit] [smp:2:2] [ds:2:2:10] [async-threads:10] [kernel-poll:false]
-
-Interactive Elixir (1.6.5) - press Ctrl+C to exit (type h() ENTER for help)
-iex(1)> Times.triple 9
-27
-iex(2)> Times.double 5
-10
-iex(3)>`
-method 2 results
-        `iex(1)> c "times.exs"
-[Times]
-iex(2)> Times.triple(59)
-177
-iex(3)> Times.double(12)
-24
-iex(4)>`
-
-Exercise 3: refer to `/elixir_tests/times.exs`
-Exercise 4: refer to `/elixir_tests/sum.exs`
-Exercise 5: refer to `/elixir_tests/gcd.exs`
->>>>>>> ed099559e81852522d09d17e373504a68b8f03d5

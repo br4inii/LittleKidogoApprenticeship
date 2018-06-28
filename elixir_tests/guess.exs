@@ -1,19 +1,29 @@
 defmodule Chop do
-    
-        
-    def guess(actual,(a..z)) when actual < z do
-            a..z=a..round(z/2)            
-            IO.puts "Is it #{z}"
-            guess(actual,(a..z))        
+    @moduledoc """
+    A simple program to find a guessed number
+    using binary search
+    """
+
+    def guess(actual_number,range,guess \\ 0)
+    #   guess() takes 3 arguments where one is initially
+    #   defualted to 0.
+    def guess(actual,(a..z),guess) when guess > actual do
+    #   answer lies between lower range limit and (our guess-1)
+        z = guess-1
+        our_guess = div((a + z),2)
+        IO.puts "Is it #{our_guess}"
+        guess(actual, a..z,our_guess)
         end
 
-    def guess(actual,(a..z)) when actual > z do
-            a..z=round(z/2)..z
-            IO.puts "Is it #{a}"
-            guess(actual,(a..z))
+    def guess(actual,(a..z),guess) when actual > guess do
+    # answer lies between our guess +1 and upper range limit
+        a = guess+1
+        our_guess = div((a + z),2)
+        IO.puts "Is it #{our_guess}"
+        guess(actual, a..z, our_guess)
     end
-    def guess(actual,(a..z)) when actual == round(z/2) do
+    def guess(actual,(a..z),guess) when guess == actual do
         IO.puts "#{actual}"
     end
-    
+
 end

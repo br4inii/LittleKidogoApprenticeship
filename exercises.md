@@ -83,12 +83,13 @@ Exercise 5
 
 ## Modules
 
-    * Exercise 1: refer to /elixir_tests/times.exs
-    * Exercise 2:
+Exercise 1: refer to /elixir_tests/times.exs
+Exercise 2:
         method 1 results
 
 ```
-$ iex times.exsErlang/OTP 20 [erts-9.3] [source] [64-bit] [smp:2:2][ds:2:2:10] [async-threads:10] [kernel-poll:false]
+$ iex times.exs
+Erlang/OTP 20 [erts-9.3] [source] [64-bit] [smp:2:2][ds:2:2:10] [async-threads:10] [kernel-poll:false]
 
 Interactive Elixir (1.6.5) - press Ctrl+C to exit (type h() ENTER for help)
 iex(1)> Times.triple 9
@@ -108,6 +109,5 @@ iex(3)> Times.double(12)
 24
 iex(4)>
 ```
-    * Exercise 3: Find libraries to 
+Exercise 3: Find libraries to 
 a. Convert float to string with 2 decimals
-```

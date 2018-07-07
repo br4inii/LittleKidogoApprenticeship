@@ -49,7 +49,7 @@ Exercise 1
 
 Create a function to do the following
 
-* `list_concat.([:a, :b], [:c, :d])` to give `[:a, :b, :c, :d]`
+* `list_concat.([:a, :b], [:c, :d])` to give `[:a, :`, :c, :d]`
     solution
     `list_concat = fn a,b -> a ++ b end`
 
@@ -86,21 +86,28 @@ Exercise 5
     * Exercise 1: refer to /elixir_tests/times.exs
     * Exercise 2:
         method 1 results
-`$ iex times.exs`
-`Erlang/OTP 20 [erts-9.3] [source] [64-bit] [smp:2:2][ds:2:2:10] [async-threads:10] [kernel-poll:false]`
 
-`Interactive Elixir (1.6.5) - press Ctrl+C to exit (type h() ENTER for help)`
-`iex(1)> Times.triple 9`
-`27`
-`iex(2)> Times.double 5`
-`10`
-`iex(3)>`
+```
+$ iex times.exsErlang/OTP 20 [erts-9.3] [source] [64-bit] [smp:2:2][ds:2:2:10] [async-threads:10] [kernel-poll:false]
+
+Interactive Elixir (1.6.5) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> Times.triple 9
+27
+iex(2)> Times.double 5
+10
+iex(3)>
+```
 
         method 2 results
-`iex(1)> c "times.exs"`
-`[Times]`
-`iex(2)> Times.triple(59)`
-`177`
-`iex(3)> Times.double(12)`
-`24`
-`iex(4)>`
+```
+iex(1)> c "times.exs"
+[Times]
+iex(2)> Times.triple(59)
+177
+iex(3)> Times.double(12)
+24
+iex(4)>
+```
+    * Exercise 3: Find libraries to 
+a. Convert float to string with 2 decimals
+```
